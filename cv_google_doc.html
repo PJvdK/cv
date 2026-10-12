@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter-Jan van de Kamp — Curriculum Vitae (Google Doc View)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calibri&family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --docs-bg: #F8F9FA;
+      --docs-paper: #FFFFFF;
+      --docs-header-navy: #182B49;
+      --docs-text: #212529;
+      --docs-muted: #5A646E;
+      --docs-accent: #1A73E8;
+      --docs-border: #DADCE0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--docs-bg);
+      font-family: 'Calibri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--docs-text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Google Docs App Bar */
+    .gdocs-bar {
+      width: 100%;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--docs-border);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .gdocs-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .gdocs-icon {
+      width: 36px;
+      height: 36px;
+      background: #4285F4;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .gdocs-meta h1 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #202124;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .gdocs-badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 12px;
+      background: #E8F0FE;
+      color: #1A73E8;
+      font-weight: 600;
+    }
+
+    .gdocs-menu {
+      font-size: 12px;
+      color: #5F6368;
+      margin-top: 2px;
+    }
+
+    .gdocs-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+
+    .btn-primary {
+      background: #1A73E8;
+      color: #FFFFFF;
+    }
+    .btn-primary:hover {
+      background: #1557B0;
+    }
+
+    .btn-secondary {
+      background: #FFFFFF;
+      color: #3C4043;
+      border-color: #DADCE0;
+    }
+    .btn-secondary:hover {
+      background: #F1F3F4;
+    }
+
+    /* Page Container (Google Docs Sheet Simulation) */
+    .document-viewport {
+      margin-top: 24px;
+      width: 100%;
+      max-width: 850px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .paper-sheet {
+      background: var(--docs-paper);
+      box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15), 0 1px 2px 0 rgba(60,64,67,0.3);
+      padding: 60px 65px;
+      min-height: 1100px;
+      border-radius: 2px;
+    }
+
+    /* CV Document Typography */
+    .cv-header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .cv-name {
+      font-family: 'Georgia', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--docs-header-navy);
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+
+    .cv-subtitle {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1A73E8;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 6px;
+    }
+
+    .cv-contacts {
+      font-size: 12px;
+      color: var(--docs-muted);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .cv-contacts a {
+      color: var(--docs-muted);
+      text-decoration: none;
+    }
+    .cv-contacts a:hover {
+      text-decoration: underline;
+      color: #1A73E8;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--docs-header-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1.5px solid var(--docs-header-navy);
+      padding-bottom: 3px;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    .summary-text {
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: var(--docs-text);
+      text-align: justify;
+      margin-bottom: 12px;
+    }
+
+    .competency-list {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-bottom: 12px;
+    }
+
+    .competency-list li {
+      font-size: 12px;
+      line-height: 1.45;
+      margin-bottom: 5px;
+      color: var(--docs-text);
+    }
+
+    .competency-list strong {
+      color: var(--docs-header-navy);
+    }
+
+    .role-block {
+      margin-bottom: 12px;
+    }
+
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .role-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--docs-header-navy);
+    }
+
+    .role-company {
+      font-weight: 600;
+      color: #3C4043;
+    }
+
+    .role-meta {
+      font-size: 11.5px;
+      color: var(--docs-muted);
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+
+    .role-bullets {
+      list-style-type: disc;
+      padding-left: 18px;
+    }
+
+    .role-bullets li {
+      font-size: 12px;
+      line-height: 1.45;
+      margin-bottom: 4px;
+      color: var(--docs-text);
+    }
+
+    .role-bullets strong {
+      color: #1F2937;
+    }
+
+    .education-block {
+      margin-bottom: 10px;
+    }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--docs-header-navy);
+    }
+
+    .edu-school {
+      font-weight: 600;
+      color: #3C4043;
+    }
+
+    .edu-meta {
+      font-size: 11.5px;
+      color: var(--docs-muted);
+      font-style: italic;
+      margin-bottom: 3px;
+    }
+
+    .edu-bullets {
+      list-style-type: disc;
+      padding-left: 18px;
+    }
+
+    .edu-bullets li {
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--docs-text);
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #FFFFFF;
+        padding: 0;
+      }
+      .gdocs-bar {
+        display: none !important;
+      }
+      .document-viewport {
+        margin: 0;
+        max-width: 100%;
+      }
+      .paper-sheet {
+        box-shadow: none;
+        padding: 20mm 15mm;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Google Docs Control Bar -->
+  <header class="gdocs-bar">
+    <div class="gdocs-title-group">
+      <div class="gdocs-icon">📄</div>
+      <div class="gdocs-meta">
+        <h1>Peter_Jan_van_de_Kamp_CV.docx <span class="gdocs-badge">Saved &amp; Ready</span></h1>
+        <div class="gdocs-menu">File  •  Edit  •  View  •  Insert  •  Format  •  Tools</div>
+      </div>
+    </div>
+    <div class="gdocs-actions">
+      <a href="index.html" class="btn btn-secondary">
+        ⚡ Interactive Board
+      </a>
+      <button class="btn btn-secondary" onclick="window.print()">
+        🖨️ Print / Save PDF
+      </button>
+      <a href="Peter_Jan_Van_De_Kamp_CV.docx" download class="btn btn-primary">
+        ⬇️ Download .docx
+      </a>
+    </div>
+  </header>
+
+  <!-- Document Paper Sheet -->
+  <main class="document-viewport">
+    <article class="paper-sheet" id="printable-cv">
+
+      <!-- Header -->
+      <header class="cv-header">
+        <h1 class="cv-name">Peter-Jan van de Kamp</h1>
+        <div class="cv-subtitle">Behavioral Scientist &nbsp;|&nbsp; Product Strategist &nbsp;|&nbsp; Management Consultant</div>
+        <div class="cv-contacts">
+          <span>📍 Utrecht / Amsterdam Area, Netherlands</span>
+          <span>•</span>
+          <a href="mailto:pj@example.com">✉️ pj@example.com</a>
+          <span>•</span>
+          <a href="https://linkedin.com/in/peter-jan" target="_blank">🔗 linkedin.com/in/peter-jan</a>
+          <span>•</span>
+          <span>🚀 Recognify Founder</span>
+        </div>
+      </header>
+
+      <!-- Executive Summary -->
+      <section>
+        <h2 class="section-title">Executive Summary</h2>
+        <p class="summary-text">
+          Entrepreneurial Behavioral Scientist, Product Strategist, and Change Management Consultant with a <strong>Research Master in Behavioral Science (Radboud Universiteit)</strong> (Top 5%, Cum Laude equivalent), built upon three foundational pillars: <strong>Behavioral Change</strong>, <strong>Work &amp; Organizational Psychology</strong>, and <strong>Strong Analytical &amp; Quantitative Skills</strong>. Founder of <strong>Recognify</strong>, driven by an entrepreneurial go-getter attitude and a core ambition to <strong>combine human psychology with technology, data science, and AI</strong> to translate empirical behavioral research into scalable real-world solutions. Proven track record managing cross-functional development projects for new internal diagnostic products and steering product portfolio management, alongside conducting advanced data analyses for enterprise clients to substantiate overarching talent strategy, leadership succession, and strategic workforce planning. Combines quantitative rigor (R, SEM, IRT, SQL, Tableau) with board-level diagnostic advisory (NS, UWV, Alliander) and academic/corporate training excellence (300+ professionals trained with 90%+ ratings).
+        </p>
+      </section>
+
+      <!-- Core Competencies -->
+      <section>
+        <h2 class="section-title">Core Competencies</h2>
+        <ul class="competency-list">
+          <li><strong>Behavioral Change &amp; Enterprise Strategy:</strong> Individual and systemic behavioral mechanisms, habit formation, executive alignment, transition readiness audits (Prosci ADKAR, Kotter 8-Step Model), restructuring guidance.</li>
+          <li><strong>Client Talent Strategy &amp; Workforce Analytics:</strong> Advanced workforce and assessment data analyses for enterprise clients to substantiate talent strategy, leadership succession, retention modeling, and capability gap roadmaps.</li>
+          <li><strong>Internal Product Development &amp; Portfolio Management:</strong> End-to-end development lifecycles for new internal assessment/diagnostic products, feature roadmap prioritization, R&amp;D alignment, and portfolio lifecycle management.</li>
+          <li><strong>Psychology, Tech &amp; AI Innovation (Recognify):</strong> Designing and programming personality-adaptive conversational AI platforms (Python, Botpress), LLM-assisted workflows, and interactive diagnostic instruments.</li>
+          <li><strong>People Analytics &amp; Psychometrics:</strong> Item Response Theory (IRT), Differential Item Functioning (DIF) demographic bias elimination in R on 100,000+ candidate profiles, Structural Equation Modeling (SEM), Tableau visual analytics.</li>
+          <li><strong>Facilitation &amp; Academic Instruction:</strong> Corporate workshop trainer (300+ professionals trained with 90%+ excellence ratings); university lecturer in Applied Statistics, Research Methodology, and Personal Development.</li>
+          <li><strong>Commercial Acumen &amp; Operational Leadership:</strong> High-stakes client pitching, direct door-to-door sales resilience in high-rejection environments, boutique hotel general management, and cross-functional team coordination.</li>
+        </ul>
+      </section>
+
+      <!-- Professional Experience -->
+      <section>
+        <h2 class="section-title">Professional Experience</h2>
+
+        <!-- Recognify -->
+        <div class="role-block">
+          <div class="role-header">
+            <div>
+              <span class="role-title">Founder, Product Lead &amp; Behavioral Consultant</span>
+              <span class="role-company"> | Recognify</span>
+            </div>
+            <div class="role-meta">2023 – Present</div>
+          </div>
+          <div class="role-meta">Utrecht / Nijmegen, Netherlands</div>
+          <ul class="role-bullets">
+            <li><strong>Venture Leadership &amp; Tech/AI Ambition:</strong> Founded Recognify with an entrepreneurial go-getter attitude to realize the mission of fusing human psychology with technology, data science, and AI to scale behavioral support.</li>
+            <li><strong>Conversational AI Architecture:</strong> Engineered personality-adaptive conversational AI dialog systems (Python, Botpress), generating personalized habit-change and psychological resilience pathways tailored to psychometric profiles.</li>
+            <li><strong>Empirical Research Partnership:</strong> Initiated and directed an academic research collaboration with Radboud Universiteit faculty, scientifically proving measurable positive shifts in life satisfaction and wellbeing in pilot cohorts.</li>
+            <li><strong>Product Design &amp; User Translation:</strong> Designed interactive result-translation dashboards, converting complex psychological datasets into intuitive, engaging personal development roadmaps.</li>
+            <li><strong>Commercial Client Advisory:</strong> Spearheaded venture strategy, high-stakes client pitching, and consultative advisory engagements with external business stakeholders and enterprise sponsors.</li>
+          </ul>
+        </div>
+
+        <!-- Ixly -->
+        <div class="role-block">
+          <div class="role-header">
+            <div>
+              <span class="role-title">Statistical Auditor &amp; Product Project Lead</span>
+              <span class="role-company"> | Ixly</span>
+            </div>
+            <div class="role-meta">Utrecht, Netherlands</div>
+          </div>
+          <div class="role-meta">Assessment &amp; Diagnostic Solutions</div>
+          <ul class="role-bullets">
+            <li><strong>Internal Product Development &amp; Portfolio Management:</strong> Led cross-functional development projects for new internal diagnostic and psychometric products from concept to market rollout; prioritized feature roadmaps and steered portfolio lifecycle management across existing assessment suites.</li>
+            <li><strong>Client-Facing Talent Strategy &amp; Workforce Analytics:</strong> Conducted advanced workforce and candidate assessment data analyses for corporate clients to substantiate strategic talent decisions, executive succession, and talent development roadmaps with empirical data.</li>
+            <li><strong>Psychometric Bias Elimination (R):</strong> Authored advanced psychometric validation scripts in R using Item Response Theory (IRT) and Differential Item Functioning (DIF) across 100,000+ profiles, certifying selection norm grids as completely free of demographic, ethnic, and gender bias.</li>
+            <li><strong>Predictive Retention Modeling:</strong> Constructed structural equation models (SEM) to predict employee retention and statistically validate corporate pulse surveys with empirical rigor.</li>
+          </ul>
+        </div>
+
+        <!-- NS, UWV, Alliander -->
+        <div class="role-block">
+          <div class="role-header">
+            <div>
+              <span class="role-title">Organizational Diagnostics &amp; Workforce Change Advisor</span>
+              <span class="role-company"> | NS, UWV &amp; Alliander</span>
+            </div>
+            <div class="role-meta">Netherlands</div>
+          </div>
+          <div class="role-meta">Enterprise Restructuring &amp; Leadership Programs</div>
+          <ul class="role-bullets">
+            <li><strong>Situational Judgment Tests (NS Railways):</strong> Architected custom Situational Judgment Tests (SJTs) grounded in Kotter’s 8-Step Change principles for an internal NS leadership initiative, establishing objective leadership influence metrics and executive alignment.</li>
+            <li><strong>Restructuring Readiness Roadmaps (UWV &amp; Alliander):</strong> Deployed Prosci ADKAR capability frameworks across enterprise restructurings, auditing workforce transition readiness and delivering quantitative capability roadmaps that enabled HR transition teams to execute structural relocations with minimal friction.</li>
+          </ul>
+        </div>
+
+        <!-- Radboud Trainer -->
+        <div class="role-block">
+          <div class="role-header">
+            <div>
+              <span class="role-title">Professional Workshop Trainer &amp; University Lecturer</span>
+              <span class="role-company"> | Radboud Universiteit &amp; Corporate Programs</span>
+            </div>
+            <div class="role-meta">Nijmegen &amp; Utrecht, Netherlands</div>
+          </div>
+          <div class="role-meta">Applied Statistics &amp; Psychometric Facilitation</div>
+          <ul class="role-bullets">
+            <li><strong>Corporate Facilitation (300+ Leaders):</strong> Designed and delivered diagnostic masterclasses for 300+ HR professionals, executive coaches, and career counselors on psychometric interpretation and diagnostic counseling, consistently securing 90%+ excellence ratings.</li>
+            <li><strong>Academic Statistics Instruction:</strong> Taught undergraduate and graduate courses at Radboud Universiteit in Applied Statistics, Research Methodology, and Personal Development, translating complex structural equation models and experimental design into intuitive frameworks.</li>
+          </ul>
+        </div>
+
+        <!-- Boutique Hotel & Sales -->
+        <div class="role-block">
+          <div class="role-header">
+            <div>
+              <span class="role-title">General Manager &amp; Commercial Lead</span>
+              <span class="role-company"> | Boutique Hotel Operations &amp; Field Sales</span>
+            </div>
+            <div class="role-meta">Netherlands</div>
+          </div>
+          <ul class="role-bullets">
+            <li><strong>Operations Leadership:</strong> Directed daily operations, cross-functional team coordination, VIP stakeholder hospitality, and operational crisis management as General Manager of a boutique hotel.</li>
+            <li><strong>Commercial Sales Resilience:</strong> Executed direct door-to-door sales campaigns, mastering rapid trust-building, customer psychology, and objection handling in high-pressure, high-rejection field environments.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h2 class="section-title">Education &amp; Credentials</h2>
+
+        <div class="education-block">
+          <div class="edu-header">
+            <div>
+              <span class="edu-degree">Research Master in Behavioral Science</span>
+              <span class="edu-school"> | Radboud Universiteit</span>
+            </div>
+            <div class="edu-meta">Top 5% of Class (Cum Laude Equiv.)</div>
+          </div>
+          <div class="edu-meta">Nijmegen, Netherlands</div>
+          <ul class="edu-bullets">
+            <li><strong>Three Foundational Pillars:</strong> 1) <strong>Behavioral Change</strong> (Gedragsverandering: empirical mechanisms, habit formation, intervention design); 2) <strong>Work &amp; Organizational Psychology</strong> (Organisatiepsychologie: culture, team dynamics, leadership influence); 3) <strong>Strong Analytical Skills</strong> (Sterke Analytische Vaardigheden: advanced statistical computing in R, psychometric modeling, research methodology).</li>
+          </ul>
+        </div>
+
+        <div class="education-block">
+          <div class="edu-header">
+            <div>
+              <span class="edu-degree">Bachelor of Science in Psychology (Honours)</span>
+              <span class="edu-school"> | Radboud Universiteit</span>
+            </div>
+            <div class="edu-meta">Nijmegen, Netherlands</div>
+          </div>
+          <div class="edu-meta">Focus: Work &amp; Organizational Psychology, Experimental Research Methodology, Applied Psychometrics</div>
+        </div>
+
+      </section>
+
+    </article>
+  </main>
+
+</body>
+</html>
