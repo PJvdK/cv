@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peter-Jan van de Kamp — Curriculum Vitae (Google Doc View)</title>
+  <title>Peter-Jan van de Kamp — Curriculum Vitae (ATS &amp; Clean View)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Calibri&family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -142,61 +142,63 @@
 
     .paper-sheet {
       background: var(--docs-paper);
-      box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15), 0 1px 2px 0 rgba(60,64,67,0.3);
-      padding: 60px 65px;
-      min-height: 1100px;
-      border-radius: 2px;
+      box-shadow: 0 2px 6px rgba(60,64,67,0.15), 0 1px 2px rgba(60,64,67,0.3);
+      border-radius: 1px;
+      padding: 48px 56px;
+      min-height: 1050px;
     }
 
-    /* CV Document Typography */
+    /* Header Block */
     .cv-header {
-      text-align: center;
+      border-bottom: 2px solid var(--docs-header-navy);
+      padding-bottom: 16px;
       margin-bottom: 18px;
     }
 
     .cv-name {
-      font-family: 'Georgia', serif;
-      font-size: 26px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 32px;
       font-weight: 700;
       color: var(--docs-header-navy);
-      letter-spacing: -0.3px;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
       margin-bottom: 4px;
     }
 
     .cv-subtitle {
-      font-size: 13px;
-      font-weight: 700;
-      color: #1A73E8;
-      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--docs-muted);
       letter-spacing: 0.8px;
-      margin-bottom: 6px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
     }
 
     .cv-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
       font-size: 12px;
       color: var(--docs-muted);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
     }
 
     .cv-contacts a {
-      color: var(--docs-muted);
+      color: var(--docs-accent);
       text-decoration: none;
     }
+
     .cv-contacts a:hover {
       text-decoration: underline;
-      color: #1A73E8;
     }
 
+    /* Section Typography */
     .section-title {
-      font-size: 13px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 16px;
       font-weight: 700;
-      color: var(--docs-header-navy);
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: 1.2px;
+      color: var(--docs-header-navy);
       border-bottom: 1.5px solid var(--docs-header-navy);
       padding-bottom: 3px;
       margin-top: 18px;
@@ -229,7 +231,7 @@
     }
 
     .role-block {
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .role-header {
@@ -298,12 +300,12 @@
       font-size: 11.5px;
       color: var(--docs-muted);
       font-style: italic;
-      margin-bottom: 3px;
     }
 
     .edu-bullets {
       list-style-type: disc;
       padding-left: 18px;
+      margin-top: 4px;
     }
 
     .edu-bullets li {
@@ -312,10 +314,10 @@
       color: var(--docs-text);
     }
 
-    /* Print styling */
+    /* Print Optimization */
     @media print {
       body {
-        background: #FFFFFF;
+        background: white;
         padding: 0;
       }
       .gdocs-bar {
@@ -327,7 +329,7 @@
       }
       .paper-sheet {
         box-shadow: none;
-        padding: 20mm 15mm;
+        padding: 15mm 15mm;
       }
     }
   </style>
@@ -339,13 +341,13 @@
     <div class="gdocs-title-group">
       <div class="gdocs-icon">📄</div>
       <div class="gdocs-meta">
-        <h1>Peter_Jan_van_de_Kamp_CV.docx <span class="gdocs-badge">Saved &amp; Ready</span></h1>
+        <h1>Peter_Jan_van_de_Kamp_CV.docx <span class="gdocs-badge">Verified &amp; Audited</span></h1>
         <div class="gdocs-menu">File  •  Edit  •  View  •  Insert  •  Format  •  Tools</div>
       </div>
     </div>
     <div class="gdocs-actions">
       <a href="index.html" class="btn btn-secondary">
-        ⚡ Interactive Board
+        ⚡ Interactive Portfolio
       </a>
       <button class="btn btn-secondary" onclick="window.print()">
         🖨️ Print / Save PDF
@@ -363,15 +365,15 @@
       <!-- Header -->
       <header class="cv-header">
         <h1 class="cv-name">Peter-Jan van de Kamp</h1>
-        <div class="cv-subtitle">Behavioral Scientist &nbsp;|&nbsp; Product Strategist &nbsp;|&nbsp; Management Consultant</div>
+        <div class="cv-subtitle">Behavioral Scientist &nbsp;|&nbsp; Data &amp; Change Consultant &nbsp;|&nbsp; Product Lead</div>
         <div class="cv-contacts">
           <span>📍 Utrecht / Amsterdam Area, Netherlands</span>
           <span>•</span>
-          <a href="mailto:pj@example.com">✉️ pj@example.com</a>
+          <a href="mailto:peterjanvdkamp1997@gmail.com">✉️ peterjanvdkamp1997@gmail.com</a>
           <span>•</span>
-          <a href="https://linkedin.com/in/peter-jan" target="_blank">🔗 linkedin.com/in/peter-jan</a>
+          <a href="tel:+31649139591">📞 +31 6 49139591</a>
           <span>•</span>
-          <span>🚀 Recognify Founder</span>
+          <a href="https://linkedin.com/in/pjvdk" target="_blank">🔗 linkedin.com/in/pjvdk</a>
         </div>
       </header>
 
@@ -379,7 +381,7 @@
       <section>
         <h2 class="section-title">Executive Summary</h2>
         <p class="summary-text">
-          Entrepreneurial Behavioral Scientist, Product Strategist, and Change Management Consultant with a <strong>Research Master in Behavioral Science (Radboud Universiteit)</strong> (Top 5%, Cum Laude equivalent), built upon three foundational pillars: <strong>Behavioral Change</strong>, <strong>Work &amp; Organizational Psychology</strong>, and <strong>Strong Analytical &amp; Quantitative Skills</strong>. Founder of <strong>Recognify</strong>, driven by an entrepreneurial go-getter attitude and a core ambition to <strong>combine human psychology with technology, data science, and AI</strong> to translate empirical behavioral research into scalable real-world solutions. Proven track record managing cross-functional development projects for new internal diagnostic products and steering product portfolio management, alongside conducting advanced data analyses for enterprise clients to substantiate overarching talent strategy, leadership succession, and strategic workforce planning. Combines quantitative rigor (R, SEM, IRT, SQL, Tableau) with board-level diagnostic advisory (NS, UWV, Alliander) and academic/corporate training excellence (300+ professionals trained with 90%+ ratings).
+          Kwantitatief onderlegde gedragswetenschapper en adviseur met een <strong>Research Master in Behavioral Science (Radboud Universiteit)</strong> (Top 5% van het cohort, Cum Laude equivalent). Mijn drijfveer: <em>"Ik houd van meten wat vaak als onmeetbaar wordt gezien, om vervolgens vanuit gedragswetenschap te adviseren en echte impact te maken."</em> Mijn kernfocus is de kloof dichten tussen technologie en menselijk gedrag: digitale tools en strategieën slagen pas wanneer mensen er daadwerkelijk mee kunnen en willen werken. Brengt 2+ jaar advieservaring mee bij assessment- en HR-techbureau <strong>Ixly</strong>, waar hij op consultancy-niveau meedacht over talentstrategieën bij enterprise-klanten (o.a. <strong>UWV, Alliander, NS, DPG Media</strong>) en grootschalige data-audits uitvoerde (A+O fonds 20.000 dataset; R psychometrie over 100.000+ profielen). Oprichter en CPO van <strong>Recognify</strong> (gamified behavior-change app in de App Store). Zoekt nu bewust de schaal, dynamiek en maatschappelijke impact van toonaangevende bureaus en organisaties om complexe transformaties van kop tot staart te begeleiden.
         </p>
       </section>
 
@@ -387,13 +389,13 @@
       <section>
         <h2 class="section-title">Core Competencies</h2>
         <ul class="competency-list">
-          <li><strong>Behavioral Change &amp; Enterprise Strategy:</strong> Individual and systemic behavioral mechanisms, habit formation, executive alignment, transition readiness audits (Prosci ADKAR, Kotter 8-Step Model), restructuring guidance.</li>
-          <li><strong>Client Talent Strategy &amp; Workforce Analytics:</strong> Advanced workforce and assessment data analyses for enterprise clients to substantiate talent strategy, leadership succession, retention modeling, and capability gap roadmaps.</li>
-          <li><strong>Internal Product Development &amp; Portfolio Management:</strong> End-to-end development lifecycles for new internal assessment/diagnostic products, feature roadmap prioritization, R&amp;D alignment, and portfolio lifecycle management.</li>
-          <li><strong>Psychology, Tech &amp; AI Innovation (Recognify):</strong> Designing and programming personality-adaptive conversational AI platforms (Python, Botpress), LLM-assisted workflows, and interactive diagnostic instruments.</li>
-          <li><strong>People Analytics &amp; Psychometrics:</strong> Item Response Theory (IRT), Differential Item Functioning (DIF) demographic bias elimination in R on 100,000+ candidate profiles, Structural Equation Modeling (SEM), Tableau visual analytics.</li>
-          <li><strong>Facilitation &amp; Academic Instruction:</strong> Corporate workshop trainer (300+ professionals trained with 90%+ excellence ratings); university lecturer in Applied Statistics, Research Methodology, and Personal Development.</li>
-          <li><strong>Commercial Acumen &amp; Operational Leadership:</strong> High-stakes client pitching, direct door-to-door sales resilience in high-rejection environments, boutique hotel general management, and cross-functional team coordination.</li>
+          <li><strong>Change &amp; Management Science:</strong> Integrale veranderaanpak met oog voor de structurele kant (inrichting, processen, sturing) én de menselijke kant (adoptie, weerstand, gedragsmechanismen); veranderkunde als diagnostiek om frictie op te lossen.</li>
+          <li><strong>Enterprise Talent Strategy &amp; Assessment Advisory:</strong> Klankborden op consultancy-niveau met HR-managers en directies over recruitment, leiderschapskwaliteit, maatwerk assessments en duurzame inzetbaarheid.</li>
+          <li><strong>Kwantificeren om Data-Gedreven te Leiden:</strong> Vertalen van subjectieve organisatievariabelen (leiderschapsgedrag, veranderbereidheid, trainingsrendement) naar objectieve meetcriteria en evaluatiemodellen.</li>
+          <li><strong>Workforce Analytics &amp; Psychometrische Validatie (R):</strong> Item Response Theory (IRT) en Differential Item Functioning (DIF) over 100.000+ profielen ter eliminatie van demografische en genderbias; macro workforce trendanalyses op 20.000+ datasets (A+O fonds).</li>
+          <li><strong>Product Management &amp; Algoritmische Tooling:</strong> Projectmanagement van nieuwe digitale tools (AI-chatbots, selectie-beslisalgoritmen, testgrids), portfolio management en roadmap-prioritering tussen R&amp;D en commercie.</li>
+          <li><strong>Digital App Innovation &amp; Human-Centered Design (Recognify):</strong> Native iOS/Android app bouwen in de App Store gericht op positieve psychologie en zelf-leiderschap; wetenschappelijk pilotonderzoek met Radboud Universiteit.</li>
+          <li><strong>Facilitatie &amp; Universitair Onderwijs:</strong> Opleiden van 300+ recruiters, loopbaancoaches en HR-professionals in diagnostiek (90%+ tevredenheid); universitair docent Toegepaste Statistiek en Onderzoeksmethodologie.</li>
         </ul>
       </section>
 
@@ -401,56 +403,41 @@
       <section>
         <h2 class="section-title">Professional Experience</h2>
 
-        <!-- Recognify -->
-        <div class="role-block">
-          <div class="role-header">
-            <div>
-              <span class="role-title">Founder, Product Lead &amp; Behavioral Consultant</span>
-              <span class="role-company"> | Recognify</span>
-            </div>
-            <div class="role-meta">2023 – Present</div>
-          </div>
-          <div class="role-meta">Utrecht / Nijmegen, Netherlands</div>
-          <ul class="role-bullets">
-            <li><strong>Venture Leadership &amp; Tech/AI Ambition:</strong> Founded Recognify with an entrepreneurial go-getter attitude to realize the mission of fusing human psychology with technology, data science, and AI to scale behavioral support.</li>
-            <li><strong>Conversational AI Architecture:</strong> Engineered personality-adaptive conversational AI dialog systems (Python, Botpress), generating personalized habit-change and psychological resilience pathways tailored to psychometric profiles.</li>
-            <li><strong>Empirical Research Partnership:</strong> Initiated and directed an academic research collaboration with Radboud Universiteit faculty, scientifically proving measurable positive shifts in life satisfaction and wellbeing in pilot cohorts.</li>
-            <li><strong>Product Design &amp; User Translation:</strong> Designed interactive result-translation dashboards, converting complex psychological datasets into intuitive, engaging personal development roadmaps.</li>
-            <li><strong>Commercial Client Advisory:</strong> Spearheaded venture strategy, high-stakes client pitching, and consultative advisory engagements with external business stakeholders and enterprise sponsors.</li>
-          </ul>
-        </div>
-
         <!-- Ixly -->
         <div class="role-block">
           <div class="role-header">
             <div>
-              <span class="role-title">Statistical Auditor &amp; Product Project Lead</span>
+              <span class="role-title">Consultant Talent Strategy, Data Analist &amp; Product Project Lead</span>
               <span class="role-company"> | Ixly</span>
             </div>
-            <div class="role-meta">Utrecht, Netherlands</div>
+            <div class="role-meta">2021 – Heden</div>
           </div>
-          <div class="role-meta">Assessment &amp; Diagnostic Solutions</div>
+          <div class="role-meta">Utrecht, Nederland &nbsp;|&nbsp; Assessment- &amp; HR-Tech Solutions</div>
           <ul class="role-bullets">
-            <li><strong>Internal Product Development &amp; Portfolio Management:</strong> Led cross-functional development projects for new internal diagnostic and psychometric products from concept to market rollout; prioritized feature roadmaps and steered portfolio lifecycle management across existing assessment suites.</li>
-            <li><strong>Client-Facing Talent Strategy &amp; Workforce Analytics:</strong> Conducted advanced workforce and candidate assessment data analyses for corporate clients to substantiate strategic talent decisions, executive succession, and talent development roadmaps with empirical data.</li>
-            <li><strong>Psychometric Bias Elimination (R):</strong> Authored advanced psychometric validation scripts in R using Item Response Theory (IRT) and Differential Item Functioning (DIF) across 100,000+ profiles, certifying selection norm grids as completely free of demographic, ethnic, and gender bias.</li>
-            <li><strong>Predictive Retention Modeling:</strong> Constructed structural equation models (SEM) to predict employee retention and statistically validate corporate pulse surveys with empirical rigor.</li>
+            <li><strong>Enterprise Talent Strategy Advisory:</strong> Adviseerde HR-managers en talent executives bij enterprise-opdrachtgevers (<strong>UWV, Alliander, NS, DPG Media</strong>) over overkoepelende talentstrategieën, leiderschapscriteria en maatwerk assessments.</li>
+            <li><strong>UWV Case (Leiderschapsassessment &amp; Trainings-ROI):</strong> Hielp UWV-management om abstracte leiderschapswensen te concretiseren naar tastbare, meetbare gedragscriteria; co-designde assessmentworkflows en richtte een methode in om de werkelijke leereffectiviteit van trainingen op de werkvloer te kwantificeren.</li>
+            <li><strong>Grootschalige Workforce Analytics (A+O fonds):</strong> Macro talentanalyses uitgevoerd op een dataset van <strong>20.000 individuen</strong> om competentieverschuivingen, scholingsbehoeften en trends in de sector in kaart te brengen.</li>
+            <li><strong>Statistische Auditing &amp; Bias-Eliminatie in R:</strong> R-scripts ontwikkeld met <strong>Item Response Theory (IRT)</strong> en <strong>Differential Item Functioning (DIF)</strong> over <strong>100.000+ kandidaatprofielen</strong> om meetbias op etniciteit, gender en leeftijd uit te sluiten.</li>
+            <li><strong>Product Management:</strong> Leidde ontwikkelprojecten voor interne platforminnovaties: chatbots, kandidaatselectie-algoritmes en nieuwe psychometrische testgrids; dacht mee over portfolio lifecycle management.</li>
+            <li><strong>Capability Building:</strong> Masterclasses en workshops gegeven aan <strong>300+ recruiters, coaches en HR-professionals</strong> over testinterpretatie en diagnostiek (90%+ evaluatiescores).</li>
           </ul>
         </div>
 
-        <!-- NS, UWV, Alliander -->
+        <!-- Recognify -->
         <div class="role-block">
           <div class="role-header">
             <div>
-              <span class="role-title">Organizational Diagnostics &amp; Workforce Change Advisor</span>
-              <span class="role-company"> | NS, UWV &amp; Alliander</span>
+              <span class="role-title">Founder, CEO &amp; CPO</span>
+              <span class="role-company"> | Recognify</span>
             </div>
-            <div class="role-meta">Netherlands</div>
+            <div class="role-meta">2022 – Heden</div>
           </div>
-          <div class="role-meta">Enterprise Restructuring &amp; Leadership Programs</div>
+          <div class="role-meta">Utrecht, Nederland &nbsp;|&nbsp; Digital Behavioral Change &amp; Consultancy</div>
           <ul class="role-bullets">
-            <li><strong>Situational Judgment Tests (NS Railways):</strong> Architected custom Situational Judgment Tests (SJTs) grounded in Kotter’s 8-Step Change principles for an internal NS leadership initiative, establishing objective leadership influence metrics and executive alignment.</li>
-            <li><strong>Restructuring Readiness Roadmaps (UWV &amp; Alliander):</strong> Deployed Prosci ADKAR capability frameworks across enterprise restructurings, auditing workforce transition readiness and delivering quantitative capability roadmaps that enabled HR transition teams to execute structural relocations with minimal friction.</li>
+            <li><strong>Digitale App in de App Store:</strong> Een interactieve, gamified app gelanceerd in de App Store gericht op gedragsverandering, positieve psychologie en zelf-leiderschap.</li>
+            <li><strong>Empirische Validatie:</strong> Wetenschappelijk pilotonderzoek uitgevoerd in samenwerking met de Radboud Universiteit naar meetbare verschuivingen in welzijn en veerkracht.</li>
+            <li><strong>Product &amp; Venture Leadership:</strong> Verantwoordelijk voor volledige productontwikkeling, user research, wireframing, investor pitches en go-to-market strategie.</li>
+            <li><strong>Human-Centered Design Consultancy:</strong> Biedt extern advies aan organisaties over product strategy en hoe digitale tools daadwerkelijk aansluiten op menselijk gedrag.</li>
           </ul>
         </div>
 
@@ -458,30 +445,14 @@
         <div class="role-block">
           <div class="role-header">
             <div>
-              <span class="role-title">Professional Workshop Trainer &amp; University Lecturer</span>
-              <span class="role-company"> | Radboud Universiteit &amp; Corporate Programs</span>
+              <span class="role-title">Universitair Docent / Werkgroepdocent</span>
+              <span class="role-company"> | Radboud Universiteit</span>
             </div>
-            <div class="role-meta">Nijmegen &amp; Utrecht, Netherlands</div>
+            <div class="role-meta">Nijmegen, Nederland</div>
           </div>
-          <div class="role-meta">Applied Statistics &amp; Psychometric Facilitation</div>
+          <div class="role-meta">Toegepaste Statistiek, Onderzoeksmethodologie &amp; Persoonlijke Ontwikkeling</div>
           <ul class="role-bullets">
-            <li><strong>Corporate Facilitation (300+ Leaders):</strong> Designed and delivered diagnostic masterclasses for 300+ HR professionals, executive coaches, and career counselors on psychometric interpretation and diagnostic counseling, consistently securing 90%+ excellence ratings.</li>
-            <li><strong>Academic Statistics Instruction:</strong> Taught undergraduate and graduate courses at Radboud Universiteit in Applied Statistics, Research Methodology, and Personal Development, translating complex structural equation models and experimental design into intuitive frameworks.</li>
-          </ul>
-        </div>
-
-        <!-- Boutique Hotel & Sales -->
-        <div class="role-block">
-          <div class="role-header">
-            <div>
-              <span class="role-title">General Manager &amp; Commercial Lead</span>
-              <span class="role-company"> | Boutique Hotel Operations &amp; Field Sales</span>
-            </div>
-            <div class="role-meta">Netherlands</div>
-          </div>
-          <ul class="role-bullets">
-            <li><strong>Operations Leadership:</strong> Directed daily operations, cross-functional team coordination, VIP stakeholder hospitality, and operational crisis management as General Manager of a boutique hotel.</li>
-            <li><strong>Commercial Sales Resilience:</strong> Executed direct door-to-door sales campaigns, mastering rapid trust-building, customer psychology, and objection handling in high-pressure, high-rejection field environments.</li>
+            <li>Onderwijs en werkgroepen verzorgd aan bachelor- en masterstudenten in geavanceerde statistische technieken, data-analyse en empirische methodologie.</li>
           </ul>
         </div>
 
@@ -494,26 +465,26 @@
         <div class="education-block">
           <div class="edu-header">
             <div>
-              <span class="edu-degree">Research Master in Behavioral Science</span>
+              <span class="edu-degree">Research Master in Behavioral Science (MSc)</span>
               <span class="edu-school"> | Radboud Universiteit</span>
             </div>
-            <div class="edu-meta">Top 5% of Class (Cum Laude Equiv.)</div>
+            <div class="edu-meta">Top 5% van het Cohort (Cum Laude Equiv.)</div>
           </div>
-          <div class="edu-meta">Nijmegen, Netherlands</div>
+          <div class="edu-meta">Nijmegen, Nederland</div>
           <ul class="edu-bullets">
-            <li><strong>Three Foundational Pillars:</strong> 1) <strong>Behavioral Change</strong> (Gedragsverandering: empirical mechanisms, habit formation, intervention design); 2) <strong>Work &amp; Organizational Psychology</strong> (Organisatiepsychologie: culture, team dynamics, leadership influence); 3) <strong>Strong Analytical Skills</strong> (Sterke Analytische Vaardigheden: advanced statistical computing in R, psychometric modeling, research methodology).</li>
+            <li>Focus: Gedragsverandering, Organisatiepsychologie, Geavanceerde Kwantitatieve Data-analyse, Experimenteel Onderzoek.</li>
           </ul>
         </div>
 
         <div class="education-block">
           <div class="edu-header">
             <div>
-              <span class="edu-degree">Bachelor of Science in Psychology (Honours)</span>
+              <span class="edu-degree">Bachelor of Science in Psychologie (BSc, Honours Programma)</span>
               <span class="edu-school"> | Radboud Universiteit</span>
             </div>
-            <div class="edu-meta">Nijmegen, Netherlands</div>
+            <div class="edu-meta">Nijmegen, Nederland</div>
           </div>
-          <div class="edu-meta">Focus: Work &amp; Organizational Psychology, Experimental Research Methodology, Applied Psychometrics</div>
+          <div class="edu-meta">Specialisatie: Organisatiepsychologie, Psychometrie &amp; Toegepaste Data-analyse.</div>
         </div>
 
       </section>
